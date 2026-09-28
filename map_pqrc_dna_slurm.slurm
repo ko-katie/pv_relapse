@@ -2,7 +2,7 @@
 #SBATCH --job-name=pqrc_dna                       # Job name
 #SBATCH --output=/path/to/working_dir/pqrc_dna.out   # Standard output log
 #SBATCH --error=/path/to/working_dir/pqrc_dna.err    # Standard error log
-#SBATCH --mail-type=BEGIN,END --mail-user=katie.ko@som.umaryland.edu
+#SBATCH --mail-type=BEGIN,END --mail-user=your_email@gmail.com
 #SBATCH --cpus-per-task=12				# Number of CPUs per task
 #SBATCH --mem=40G                                        # Memory per node
 #SBATCH --array=1-X                       #Change X to number of samples
