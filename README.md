@@ -17,7 +17,7 @@ python3 vcf_to_hmmibd_input.py /path/to/combined_vcf_file.vcf /path/to/hmmibd_in
 ```
 - Run hmmibd-rs
 ```
-hmmibd-rs -i /path/to/hmmibd_input.txt -o hmmibd_output
+hmmibd-rs -i /path/to/hmmibd_input.txt -o /path/to/hmmibd_output
 ```
 - Run make_fract_sites_ibd_matrix.py to make MEGA11 distance matrix from fract_sites_IBD column of hmmibd-rs output
 ```
