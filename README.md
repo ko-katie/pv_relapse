@@ -1,7 +1,10 @@
 # pv_relapse
 Code used for evaluating Identity by Descent between monoclonal samples analysed in manuscript: _Plasmodium vivax_ relapses are frequent, genetically diverse, and transmissible in Cambodia
 
-Code developed using: [gatk version 4.2.2.0](https://github.com/broadinstitute/gatk/releases), [samtools version 1.9](https://www.htslib.org/download/), [picard version 2.9.4](https://broadinstitute.github.io/picard/), [vcftools version 0.1.15](https://sourceforge.net/projects/vcftools/), [slurm version 23.11.6](https://slurm.schedmd.com/), [hmmibd-rs version 0.1.5](https://github.com/bguo068/hmmibd-rs), [MEGA11](https://www.megasoftware.net/) 
+Code developed using: [Hisat2 version 2.2.1](https://daehwankimlab.github.io/hisat2/download/), [gatk version 4.2.2.0](https://github.com/broadinstitute/gatk/releases), [samtools version 1.9](https://www.htslib.org/download/), [picard version 2.9.4](https://broadinstitute.github.io/picard/), [vcftools version 0.1.15](https://sourceforge.net/projects/vcftools/), [slurm version 23.11.6](https://slurm.schedmd.com/), [hmmibd-rs version 0.1.5](https://github.com/bguo068/hmmibd-rs), [MEGA11](https://www.megasoftware.net/) 
+
+## Map Illumina WGS paired-end sequencing reads of patient samples using Hisat2
+_Map WGS data using Hisat2 and remove PCR duplicates_
 
 
 ## Identity by Descent Analysis
