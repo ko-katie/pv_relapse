@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=remove_dups                      # Job name
-#SBATCH --output=/local/projects-t3/SerreDLab-3/kko/PQRC_all_dna/dna_remove_dup_dir/remove_dups.out   # Standard output log
-#SBATCH --error=/local/projects-t3/SerreDLab-3/kko/PQRC_all_dna/dna_remove_dup_dir/remove_dups.err   # Standard error log
-#SBATCH --mail-type=BEGIN,END --mail-user=katie.ko@som.umaryland.edu
+#SBATCH --output=/path/to/working_dir/remove_dups.out   # Standard output log
+#SBATCH --error=/path/to/working_dir/remove_dups.err   # Standard error log
+#SBATCH --mail-type=BEGIN,END --mail-user=your_email@gmail.com
 #SBATCH --cpus-per-task=12				# Number of CPUs per task
 #SBATCH --mem=32G                                        # Memory per node
-#SBATCH --array=1-269
+#SBATCH --array=1-X               # Change X to reflect number of samples to be processed
 
-/local/projects-t3/SerreDLab-3/kko/PQRC_all_dna/dna_remove_dups_slurm.sh
+/path/to/working_dir/dna_remove_dups_slurm.sh
 
 echo "All bams have been processed"
