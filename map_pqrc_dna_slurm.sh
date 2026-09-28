@@ -13,7 +13,7 @@ mkdir -p "$SUM_DIR"
 mkdir -p "$LOG_DIR"
 
 # Get the subfolder name from the corresponding line in "slurm_dirList3.txt"
-SAMPLE_LINE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /path/to/all_pqrc_paths.txt)
+SAMPLE_LINE=$(sed "${SLURM_ARRAY_TASK_ID}q;d" /path/to/all_sample_paths.txt)
 
 IFS=$'\t' read  SAMPLE_NAME R1_PATH R2_PATH <<< "$SAMPLE_LINE"
 
