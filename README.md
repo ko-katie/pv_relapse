@@ -17,17 +17,17 @@ hisat2-build PlasmoDB-67_PvivaxP01_Genome.fasta PvivaxP01_hisat_index
   - Change "/path/to/working_dir/" text in map_pqrc_dna.sh and map_pqrc_dna.slurm files into path to desired working directory
   - Change line 8 of map_pqrc_dna.slurm file to reflect number of samples to be processed
   - Create all_sample_paths.txt file, a tab-delimited file where each line has the sample name, path to R1 file, and path to R2 file
-'''
+```
 sbatch --mem=42G -c 14 map_pqrc_dna.slurm
-'''
+```
 
 - Run pcr duplicate removal on bam files generated from Hisat2 using dna_remove_dups scripts
   - Change "/path/to/working_dir/" text in dna_remove_dups.sh and dna_remove_dups.slurm files into path to desired working directory
   - Change line 8 of dna_remove_dups.slurm file to reflect number of samples to be processed
   - Create all_bams_to_remove_dups.txt file, a tab-delimited file where each line has sample name and path to bam file genereated by Hisat2
-'''
+```
 sbatch --mem=34G -c 14 dna_remove_dups.slurm
-'''
+```
 
 ## Identity by Descent Analysis
 _Prepare a distance matrix for MEGA11 containing identity by descent comparisons for samples_
