@@ -41,7 +41,7 @@ for line in hmmibd_output_file:
 
     sample_list = update_sample_list(sample_list, sample1, sample2)
 
-    fract_sites_ibd = split_line[8]
+    fract_sites_ibd = split_line[9]
 
     pairwise_samples_string = make_pairwise_comparison_string(sample1, sample2)
 
